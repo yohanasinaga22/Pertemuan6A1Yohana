@@ -1,0 +1,104 @@
+nilai = set({3, 6, 9, 2, 5, 7})
+
+# Menambahkan elemen baru ke dalam himpunan
+nilai.add(1)
+nilai.add(4)
+nilai.add(8)
+nilai.add(10)
+
+print("Setelah ditambahkan:")
+print(nilai)
+
+
+nilai = set({3, 6, 9, 2, 5, 7})
+
+# Menambahkan elemen baru ke dalam himpunan
+nilai.add(1)
+nilai.add(4)
+nilai.add(8)
+nilai.add(10)
+
+# Menghapus elemen tertentu dari himpunan
+nilai.discard(3)
+nilai.discard(5)
+nilai.discard(7)
+
+print("Setelah penghapusan:")
+print(nilai)
+
+
+
+A = {100, 7, 8}
+B = {200, 4, 5}
+C = {300, 2, 3}
+D = {100, 200, 300}
+
+# Operasi A ∩ D
+result_A_D = A.intersection(D)
+
+# Operasi B ∩ D
+result_B_D = B.intersection(D)
+
+# Operasi C ∩ D
+result_C_D = C.intersection(D)
+
+# Operasi A ∩ B ∩ C ∩ D
+result_A_B_C_D = A.intersection(B).intersection(C).intersection(D)
+
+print("a. A ∩ D:", result_A_D)
+print("b. B ∩ D:", result_B_D)
+print("c. C ∩ D:", result_C_D)
+print("d. A ∩ B ∩ C ∩ D:", result_A_B_C_D)
+
+
+A = {100, 7, 8}
+B = {200, 4, 5}
+C = {300, 2, 3}
+D = {100, 200, 300}
+
+# Operasi A U B
+result_A_union_B = A.union(B)
+
+# Operasi B U C
+result_B_union_C = B.union(C)
+
+# Operasi B U C U D
+result_B_union_C_union_D = B.union(C).union(D)
+
+# Operasi A U B U C U D
+result_A_union_B_union_C_union_D = A.union(B).union(C).union(D)
+
+print("a. A U B:", result_A_union_B)
+print("b. B U C:", result_B_union_C)
+print("c. B U C U D:", result_B_union_C_union_D)
+print("d. A U B U C U D:", result_A_union_B_union_C_union_D)
+
+A = {'a', 'b', 'c', 'd'}
+B = {'c', 'd', 'e' }
+C = {}
+
+hasil1 = A.difference (B)
+hasil2 = B.difference (A)
+hasil3 = A.difference (C)
+hasil4 = B.difference (C)
+
+print("a. A difference B:", hasil1)
+print("b. B difference A:", hasil2)
+print("c. A difference C:", hasil3)
+print("d. B difference C:", hasil4)
+
+A = {'a', 'b', 'c', 'd'}
+B = {'c', 'd', 'e'}
+C = {}
+
+result1 = A.symmetric_difference(B)
+result2 = B.symmetric_difference(A)
+result3 = A.symmetric_difference(C)
+result4 = B.symmetric_difference(C)
+
+print("a. A symmetric difference B:", result1)
+print("b. B symmetric difference A:", result2)
+print("c. A symmetric difference C:", result3)
+print("d. B symmetric difference C:", result4)
+
+
